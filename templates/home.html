@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="jumbotron text-center">
+    <h1>welcome to our blog</h1>
+    <p>this my first python programming web app. This is the testing blog website. This is create by learning from a youtube channel traversy media. This channel have a nice tutorial on flask app. Flask is a python framework. Bye this i Learn very much about Python as well about Flask.</p>
+    {% if session.logged_in == NULL %}
+      <a href="/register" class="btn btn-primary btn-lg">Register</a>
+      <a href="/login" class="btn btn-success btn-lg">Login</a>
+    {% endif %}
+  </div>
+{% endblock %}
